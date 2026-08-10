@@ -1,0 +1,43 @@
+# AI Agent Instructions: Build Technical Portfolio Hero Section
+
+## 1. Context & Candidate Persona
+- **Candidate Name**: Samuel Kyere
+- **Target Roles**: Integration Engineer, Data Operations (DataOps) Engineer, AI Solutions Engineer.
+- **Core Stacks**: Node.js, JavaScript (ES6+), Python, n8n (used as an asynchronous state/event orchestration engine), Cloudflare Workers, ChromaDB.
+- **Experience**: 2+ years of production experience managing multi-system pipelines, webhook architectures, and automated data operations for a fintech startup.
+- **Core Directive**: Absolutely do NOT make the candidate look like a junior web developer, a frontend builder, a no-code designer, or a freelance agency. The candidate is a technical Systems and Infrastructure Engineer. Avoid generic business fluff ("save time", "teams trust"); use rigorous engineering terminology ("asynchronous race conditions", "idempotent processing", "state isolation").
+
+## 2. Design Constraints (Tailwind CSS)
+- **Theme**: Premium Minimalist Data Center Dark Mode.
+- **Background**: Deep Slate/Zinc Charcoal (`bg-zinc-950`).
+- **Borders**: Thin, sharp tech borders (`border border-zinc-800/60`).
+- **Fonts**: Monospace (`font-mono`) for technical labels, metric counters, and terminal layers; clean sans-serif for primary copy headings.
+- **Accents**: High-concentration neon indicators used sparingly to direct eyes to metrics (Emerald green `#10b981` or Purple `#c084fc`).
+
+## 3. Section Content & Structural Layout
+
+### Column 1: Core Value Proposition (Left Side)
+- **Status Indicator**: An active inline-flex indicator with an emerald green pulsing dot reading: "SYSTEMS ACTIVE // AVAILABLE FOR ENGINEERING ROLES".
+- **Main Heading**: "Integration & Systems Engineer" (H1).
+- **Primary Body Copy**: "I bridge the gap between traditional codebases and modern automated systems. Backed by 2+ years of fintech production engineering, I design event-driven webhooks, data sanitization loops, and localized AI infrastructure. I use Node.js and Python to build core logic boundaries, and n8n to orchestrate complex, asynchronous cloud workflows."
+- **Action Buttons**: 
+  1. Primary (`button-primary`): Clean outline or background reading "Examine Architecture" (links to project grids).
+  2. Secondary (`button-secondary`): Monospace style reading "Download Technical Resume (PDF)".
+
+### Column 2: Live System Status Component (Right Side)
+- Replace generic images or basic summaries with a simulated, interactive backend control dashboard card (`bg-zinc-900/40`, `border-zinc-800`).
+- **Dashboard Header**: Displays a simulated node status indicator: `Host: Localhost:8000 // Database: Active`.
+- **System Footprint Rows**: Display crisp metric layers demonstrating real-world project outcomes:
+  - Row 1: "Manvelle Menswear PRODUCTION ENGINE" -> Flagging a "~70% reduction in manual operations via multi-modal GPT-4o state streams."
+  - Row 2: "DATAOPS SEEDING PIPELINE" -> Flagging "Cloudflare Edge Workers processing high-volume CSV scrubbing into Confluence API hooks."
+  - Row 3: "LOCALIZED RAG CLUSTER" -> Flagging "Python-driven semantic querying pipeline running over localized ChromaDB vector indexes."
+
+  ## 5. Deployment Override: GitHub Pages Target
+- The application will be deployed as a static site on GitHub Pages.
+- Configure `next.config.js` with `output: 'export'` and `images: { unoptimized: true }`.
+- Ensure all paths and assets are relative so they do not break when hosted under a repository subdirectory (e.g., username.github.io/repo-name).
+- Deliver the final code as a single-file React component or standard Next.js App Router structure that compiles cleanly with `npm run build` into a static asset folder.
+
+
+## 4. Code Output Requirement
+Generate clean, highly-scannable Next.js (React) syntax fully utilizing the custom utility styles defined in the Tailwind CSS configuration layout. Use active voice and ensure every text block provides clean, actionable data.
