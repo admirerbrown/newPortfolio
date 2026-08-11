@@ -1,10 +1,52 @@
 'use client';
 
+const aiChatbotPreview =
+  'https://raw.githubusercontent.com/admirerbrown/AI-chatbot/main/assets/Screenshot_2025-11-19_23-13-11.png';
+
+const dataSeedingPreview =
+  'https://raw.githubusercontent.com/admirerbrown/automated_data_seeding/main/assets/architecture.png';
+
+const automationPreview = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+  <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+    <rect width="1200" height="720" rx="28" fill="#020617"/>
+    <rect x="36" y="36" width="1128" height="648" rx="24" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="76" y="92" width="260" height="68" rx="16" fill="#111827" stroke="#334155"/>
+    <rect x="76" y="188" width="320" height="120" rx="20" fill="#111827" stroke="#334155"/>
+    <rect x="430" y="188" width="320" height="120" rx="20" fill="#111827" stroke="#334155"/>
+    <rect x="784" y="188" width="340" height="120" rx="20" fill="#111827" stroke="#334155"/>
+    <rect x="76" y="360" width="1048" height="220" rx="24" fill="#020617" stroke="#1e293b"/>
+    <path d="M176 160v28" stroke="#34d399" stroke-width="8" stroke-linecap="round"/>
+    <path d="M590 160v28" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M954 160v28" stroke="#22d3ee" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="176" cy="160" r="18" fill="#34d399"/>
+    <circle cx="590" cy="160" r="18" fill="#8b5cf6"/>
+    <circle cx="954" cy="160" r="18" fill="#22d3ee"/>
+    <rect x="112" y="214" width="56" height="56" rx="12" fill="#34d399" opacity="0.2"/>
+    <rect x="466" y="214" width="56" height="56" rx="12" fill="#8b5cf6" opacity="0.2"/>
+    <rect x="820" y="214" width="56" height="56" rx="12" fill="#22d3ee" opacity="0.2"/>
+    <path d="M180 220h80" stroke="#cbd5e1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M534 220h80" stroke="#cbd5e1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M888 220h80" stroke="#cbd5e1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M396 240h34" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M750 240h34" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+    <rect x="112" y="402" width="128" height="20" rx="10" fill="#34d399" opacity="0.7"/>
+    <rect x="112" y="438" width="240" height="16" rx="8" fill="#475569"/>
+    <rect x="112" y="470" width="316" height="16" rx="8" fill="#475569"/>
+    <rect x="664" y="402" width="128" height="20" rx="10" fill="#8b5cf6" opacity="0.7"/>
+    <rect x="664" y="438" width="220" height="16" rx="8" fill="#475569"/>
+    <rect x="664" y="470" width="258" height="16" rx="8" fill="#475569"/>
+    <path d="M448 250h80" stroke="#22d3ee" stroke-width="8" stroke-linecap="round"/>
+    <path d="M816 250h80" stroke="#22d3ee" stroke-width="8" stroke-linecap="round"/>
+    <text x="106" y="128" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="28" font-weight="700">Workflow state engine</text>
+    <text x="106" y="420" fill="#f8fafc" font-family="Arial, sans-serif" font-size="28" font-weight="700">Context + handoff + memory</text>
+  </svg>
+`)}`;
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
       {/* Hero Section - Full Viewport */}
-      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden glitch-hero">
+      <section className="relative z-10 flex h-screen flex-col items-center justify-center overflow-visible glitch-hero">
         {/* Animated Grid Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.24)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.24)_1px,transparent_1px)] bg-[length:50px_50px] opacity-30" />
@@ -213,143 +255,246 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-1/2 z-20 -translate-x-1/2 translate-y-1/2">
+          <p className="font-mono text-xs tracking-widest text-slate-400">
+            /* FEATURED SYSTEMS */
+          </p>
+        </div>
       </section>
 
       {/* Projects Section */}
       <section
         id="projects"
-        className="relative py-20 border-t border-zinc-800/40"
+        className="terminal-projects relative overflow-hidden border-t border-zinc-800/40 pb-24 pt-32"
       >
-        {/* Decorative Code Divider */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 bg-slate-950">
-          <p className="font-mono text-xs text-slate-500 tracking-widest">
-            /* FEATURED SYSTEMS */
-          </p>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/75 to-slate-950" />
+          <div className="terminal-orbit terminal-orbit-one">
+            <span className="terminal-orbit-node terminal-orbit-node-one" />
+          </div>
+          <div className="terminal-orbit terminal-orbit-two">
+            <span className="terminal-orbit-node terminal-orbit-node-two" />
+          </div>
         </div>
-
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8">
-          <div className="space-y-12">
-            <div className="space-y-4 text-center">
-              <p className="text-sm font-semibold uppercase tracking-wide text-cyan-400">
+        <div className="relative mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+          <div className="space-y-14">
+            <div className="space-y-3 text-center">
+              <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">
                 Featured Work
               </p>
-              <h2 className="text-4xl font-bold text-white">
+              <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 Projects & Case Studies
               </h2>
-              <p className="mx-auto max-w-2xl text-slate-400">
+              <p className="mx-auto max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
                 A selection of projects that showcase my expertise in building
                 scalable systems and automation.
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {/* Project Card 1 */}
-              <div className="group overflow-hidden rounded-xl border border-slate-700 bg-slate-900/50 transition hover:border-slate-600 hover:bg-slate-900/80">
-                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-cyan-600/20 to-blue-600/20">
-                  <img
-                    src="https://images.squarespace-cdn.com/content/v1/65418420e2d3f205e0a0db76/dd849595-54ac-48fd-a3db-86631070485e/Ingenuity+Rotation+Sim.gif"
-                    alt="Automation Pipeline"
-                    className="h-full w-full object-cover opacity-60 group-hover:opacity-80 transition"
-                  />
-                </div>
-                <div className="space-y-3 p-6">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-cyan-400">
-                      Infrastructure
-                    </p>
-                    <h3 className="mt-2 text-xl font-bold text-white">
-                      Webhook Automation
-                    </h3>
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              <article className="group relative h-full overflow-hidden rounded-2xl border border-slate-700/70 bg-gradient-to-br from-slate-900/90 via-slate-900/70 to-zinc-950/90 p-4 shadow-[0_24px_90px_-40px_rgba(15,23,42,0.95)] transition duration-300 hover:-translate-y-1 hover:border-violet-500/50 hover:bg-slate-900 glitch-card">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(129,140,248,0.18),transparent_30%)]" />
+                <div className="relative flex h-full flex-col gap-2.5">
+                  <div className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70">
+                    <img
+                      src={aiChatbotPreview}
+                      alt="Screenshot of the FAQ-driven AI chatbot project"
+                      className="h-28 w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
                   </div>
-                  <p className="text-sm leading-relaxed text-slate-400">
-                    Built a high-throughput webhook processing system handling
-                    1.2k requests per minute with 99.8% reliability.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      n8n
-                    </span>
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      Python
-                    </span>
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      APIs
-                    </span>
-                  </div>
-                </div>
-              </div>
 
-              {/* Project Card 2 */}
-              <div className="group overflow-hidden rounded-xl border border-slate-700 bg-slate-900/50 transition hover:border-slate-600 hover:bg-slate-900/80">
-                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-sky-600/20 to-cyan-600/20">
-                  <img
-                    src="https://images.squarespace-cdn.com/content/v1/65418420e2d3f205e0a0db76/dd849595-54ac-48fd-a3db-86631070485e/Ingenuity+Rotation+Sim.gif"
-                    alt="Data Pipeline"
-                    className="h-full w-full object-cover opacity-60 group-hover:opacity-80 transition"
-                  />
-                </div>
-                <div className="space-y-3 p-6">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-sky-400">
-                      Operations
-                    </p>
-                    <h3 className="mt-2 text-xl font-bold text-white">
-                      Data Pipelines
-                    </h3>
-                  </div>
-                  <p className="text-sm leading-relaxed text-slate-400">
-                    Designed scalable data flow systems with comprehensive error
-                    handling, recovery, and monitoring.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      Node.js
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-cyan-400">
+                      RAG / AI CHATBOT
                     </span>
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      Docker
-                    </span>
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      PostgreSQL
+                    <span className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                      Systems Integration
                     </span>
                   </div>
-                </div>
-              </div>
 
-              {/* Project Card 3 */}
-              <div className="group overflow-hidden rounded-xl border border-slate-700 bg-slate-900/50 transition hover:border-slate-600 hover:bg-slate-900/80">
-                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-violet-600/20 to-sky-600/20">
-                  <img
-                    src="https://images.squarespace-cdn.com/content/v1/65418420e2d3f205e0a0db76/dd849595-54ac-48fd-a3db-86631070485e/Ingenuity+Rotation+Sim.gif"
-                    alt="System Integration"
-                    className="h-full w-full object-cover opacity-60 group-hover:opacity-80 transition"
-                  />
-                </div>
-                <div className="space-y-3 p-6">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-violet-400">
-                      Integration
-                    </p>
-                    <h3 className="mt-2 text-xl font-bold text-white">
-                      System Architecture
-                    </h3>
+                  <h3 className="text-[17px] font-semibold leading-snug tracking-tight text-white">
+                    FAQ knowledge agent for web experiences
+                  </h3>
+
+                  <div className="grid gap-2 rounded-xl border border-slate-800/80 bg-slate-950/60 p-2.5 sm:grid-cols-2">
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                        Core stack
+                      </p>
+                      <ul className="mt-1 space-y-0.5 text-[13px] leading-5 text-slate-300">
+                        <li>• Python + LangChain</li>
+                        <li>• ChromaDB vector search</li>
+                        <li>• n8n workflow automation</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                        Impact
+                      </p>
+                      <ul className="mt-1 space-y-0.5 text-[13px] leading-5 text-slate-300">
+                        <li>• &lt; 2s FAQ response time</li>
+                        <li>• 90%+ relevant answers</li>
+                        <li>• Easy PDF ingestion flow</li>
+                      </ul>
+                    </div>
                   </div>
-                  <p className="text-sm leading-relaxed text-slate-400">
-                    Architected distributed systems with microservices, message
-                    queues, and real-time monitoring dashboards.
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      Microservices
-                    </span>
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      Redis
-                    </span>
-                    <span className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
-                      Kubernetes
-                    </span>
+
+                  <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
+                    <a
+                      href="https://github.com/admirerbrown/AI-chatbot"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-lg border border-violet-600/60 bg-violet-950/40 px-3 py-2 text-sm font-semibold text-violet-200 transition hover:border-violet-500 hover:bg-violet-900/60"
+                    >
+                      View GitHub Repo
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1rzq_0bF4m-tnse6y5DMj3vHGlid1gkNB/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-lg border border-slate-700/70 bg-slate-900/70 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-800"
+                    >
+                      Watch Demo
+                    </a>
                   </div>
                 </div>
-              </div>
+              </article>
+
+              <article className="group relative h-full overflow-hidden rounded-2xl border border-slate-700/70 bg-gradient-to-br from-slate-900/90 via-slate-900/70 to-zinc-950/90 p-4 shadow-[0_24px_90px_-40px_rgba(15,23,42,0.95)] transition duration-300 hover:-translate-y-1 hover:border-emerald-500/50 hover:bg-slate-900 glitch-card">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.16),transparent_30%)]" />
+                <div className="relative flex h-full flex-col gap-2.5">
+                  <div className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70">
+                    <img
+                      src={automationPreview}
+                      alt="Workflow diagram for the WhatsApp lead qualification automation"
+                      className="h-28 w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-emerald-400">
+                      WHATSAPP / SALES AUTOMATION
+                    </span>
+                    <span className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-emerald-300">
+                      Workflow Orchestration
+                    </span>
+                  </div>
+
+                  <h3 className="text-[17px] font-semibold leading-snug tracking-tight text-white">
+                    Stateful inbound lead qualification engine
+                  </h3>
+
+                  <div className="grid gap-2 rounded-xl border border-slate-800/80 bg-slate-950/60 p-2.5 sm:grid-cols-2">
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                        Core stack
+                      </p>
+                      <ul className="mt-1 space-y-0.5 text-[13px] leading-5 text-slate-300">
+                        <li>• n8n orchestration</li>
+                        <li>• LangChain + GPT-4o</li>
+                        <li>• Google Sheets memory</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                        Impact
+                      </p>
+                      <ul className="mt-1 space-y-0.5 text-[13px] leading-5 text-slate-300">
+                        <li>• ~70% manual workload reduction</li>
+                        <li>• Multi-modal awareness</li>
+                        <li>• Human handoff gate</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
+                    <a
+                      href="https://github.com/admirerbrown/facebook_ad_whatsapp_inbound_automation"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-lg border border-emerald-600/60 bg-emerald-950/40 px-3 py-2 text-sm font-semibold text-emerald-200 transition hover:border-emerald-500 hover:bg-emerald-900/60"
+                    >
+                      View GitHub Repo
+                    </a>
+                    <a
+                      href="https://github.com/admirerbrown/facebook_ad_whatsapp_inbound_automation#readme"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-lg border border-slate-700/70 bg-slate-900/70 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-800"
+                    >
+                      Watch Demo
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <article className="group relative h-full overflow-hidden rounded-2xl border border-slate-700/70 bg-gradient-to-br from-slate-900/90 via-slate-900/70 to-zinc-950/90 p-4 shadow-[0_24px_90px_-40px_rgba(34,211,238,0.16)] transition duration-300 hover:-translate-y-1 hover:border-cyan-500/50 hover:bg-slate-900 glitch-card">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.16),transparent_30%)]" />
+                <div className="relative flex h-full flex-col gap-2.5">
+                  <div className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70">
+                    <img
+                      src={dataSeedingPreview}
+                      alt="Architecture diagram for the client data seeding automation"
+                      className="h-28 w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-cyan-400">
+                      DATAOPS / SEEDING PIPELINE
+                    </span>
+                    <span className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-cyan-300">
+                      Production Automation
+                    </span>
+                  </div>
+
+                  <h3 className="text-[17px] font-semibold leading-snug tracking-tight text-white">
+                    Client data seeding automation
+                  </h3>
+
+                  <div className="grid gap-2 rounded-xl border border-slate-800/80 bg-slate-950/60 p-2.5 sm:grid-cols-2">
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                        Core stack
+                      </p>
+                      <ul className="mt-1 space-y-0.5 text-[13px] leading-5 text-slate-300">
+                        <li>• n8n workflow orchestration</li>
+                        <li>• Python + Node.js processing</li>
+                        <li>• Slack, Confluence + Drive APIs</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                        Impact
+                      </p>
+                      <ul className="mt-1 space-y-0.5 text-[13px] leading-5 text-slate-300">
+                        <li>• 85% analyst effort reduction</li>
+                        <li>• 100% Confluence status updates</li>
+                        <li>• Auditable run logs</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
+                    <a
+                      href="https://github.com/admirerbrown/automated_data_seeding"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-lg border border-cyan-600/60 bg-cyan-950/40 px-3 py-2 text-sm font-semibold text-cyan-200 transition hover:border-cyan-500 hover:bg-cyan-900/60"
+                    >
+                      View GitHub Repo
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1WKuH7R5j5fHHXBaAp302QaRSE1Wpz2Ks/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center rounded-lg border border-slate-700/70 bg-slate-900/70 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-800"
+                    >
+                      Watch Demo
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
