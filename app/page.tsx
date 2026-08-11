@@ -499,6 +499,266 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Engineering Profile Section */}
+      <section id="capabilities" className="relative border-t border-zinc-800/40 bg-slate-950 py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(129,140,248,0.12),transparent_28%),radial-gradient(circle_at_10%_80%,rgba(16,185,129,0.08),transparent_24%)]" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+            <div className="space-y-5 lg:sticky lg:top-10">
+              <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">
+                System Profile
+              </p>
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Built for the work between systems.
+              </h2>
+              <p className="max-w-xl leading-relaxed text-slate-400">
+                I turn disconnected tools and manual operations into reliable
+                workflows. The focus is not only on shipping an integration,
+                but making it observable, maintainable, and useful to the
+                people who run it.
+              </p>
+              <div className="border-l-2 border-emerald-500/50 pl-4 font-mono text-xs leading-6 text-slate-400">
+                <p className="text-emerald-300">$ engineering_principles</p>
+                <p>reliable inputs → clear state → traceable outputs</p>
+              </div>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <article className="rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 transition hover:border-violet-500/40 hover:bg-slate-900/80 glitch-card">
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-violet-400">
+                  01 / Backend + APIs
+                </p>
+                <h3 className="mt-3 text-lg font-semibold text-slate-100">
+                  Integration-ready services
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Backend logic, webhooks, payload validation, and API
+                  contracts that keep systems communicating predictably.
+                </p>
+              </article>
+
+              <article className="rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 transition hover:border-emerald-500/40 hover:bg-slate-900/80 glitch-card">
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-emerald-400">
+                  02 / Automation
+                </p>
+                <h3 className="mt-3 text-lg font-semibold text-slate-100">
+                  Workflow orchestration
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Event-driven n8n workflows that connect teams, tools, and
+                  operational processes without fragile manual handoffs.
+                </p>
+              </article>
+
+              <article className="rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 transition hover:border-cyan-500/40 hover:bg-slate-900/80 glitch-card">
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-cyan-400">
+                  03 / AI Systems
+                </p>
+                <h3 className="mt-3 text-lg font-semibold text-slate-100">
+                  Grounded AI workflows
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Retrieval, automation, and human handoff patterns designed
+                  to make AI useful inside real operating environments.
+                </p>
+              </article>
+
+              <article className="rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 transition hover:border-purple-500/40 hover:bg-slate-900/80 glitch-card">
+                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-purple-400">
+                  04 / Data Operations
+                </p>
+                <h3 className="mt-3 text-lg font-semibold text-slate-100">
+                  Clean, traceable pipelines
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                  Data normalization, audit-friendly status updates, and
+                  pragmatic monitoring around every critical workflow.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Draft Section */}
+      <section id="experience" className="relative border-t border-zinc-800/40 bg-slate-950 py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(16,185,129,0.08),transparent_24%)]" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">
+                Experience Log
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Engineering experience
+              </h2>
+            </div>
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-amber-300">
+              // Draft — details pending
+            </p>
+          </div>
+
+          <div className="space-y-4 border-l border-slate-800 pl-5 sm:pl-8">
+            <article className="relative rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 glitch-card">
+              <span className="absolute -left-[29px] top-7 h-3 w-3 rounded-full border-2 border-emerald-400 bg-slate-950 sm:-left-[41px]" />
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="font-mono text-xs text-emerald-400">[ ROLE TITLE ]</p>
+                  <h3 className="mt-2 text-lg font-semibold text-slate-100">
+                    [ Company or client name ]
+                  </h3>
+                </div>
+                <span className="font-mono text-xs text-slate-500">[ DATE RANGE ]</span>
+              </div>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
+                [ Add the scope of the role, systems you owned, and one clear
+                outcome or responsibility. ]
+              </p>
+            </article>
+
+            <article className="relative rounded-xl border border-dashed border-slate-700/80 bg-slate-900/30 p-5">
+              <span className="absolute -left-[29px] top-7 h-3 w-3 rounded-full border-2 border-slate-600 bg-slate-950 sm:-left-[41px]" />
+              <p className="font-mono text-xs text-slate-500">[ ADD EXPERIENCE ENTRY ]</p>
+              <p className="mt-2 text-sm text-slate-500">
+                Duplicate this entry for another role, engagement, or notable
+                engineering contribution.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Writing Draft Section */}
+      <section id="writing" className="relative border-t border-zinc-800/40 bg-slate-950 py-24">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">
+                Engineering Notes
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Writing & technical thinking
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-relaxed text-slate-400 sm:text-right">
+              Short notes on reliable automation, integrations, and practical
+              AI systems.
+            </p>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-3">
+            <article className="flex min-h-60 flex-col rounded-xl border border-slate-800/80 bg-slate-900/40 p-5 transition hover:border-cyan-500/40 hover:bg-slate-900/70 glitch-card">
+              <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-cyan-400">
+                Integration Patterns · 3 min read
+              </p>
+              <h3 className="mt-3 text-lg font-semibold text-slate-200">
+                Webhook vs. API: Understanding the difference and when to use each one
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                A practical guide to choosing pull-based APIs or event-driven
+                webhooks based on how a system&apos;s data changes.
+              </p>
+              <a
+                href="https://medium.com/techtrends-digest/webhook-vs-api-understanding-the-difference-and-when-to-use-each-one-93cf4aefccc6?sharedUserId=mr.kyere.s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto pt-5 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300 transition hover:text-cyan-100"
+              >
+                Read article →
+              </a>
+            </article>
+
+            <article className="flex min-h-60 flex-col rounded-xl border border-slate-800/80 bg-slate-900/40 p-5 transition hover:border-violet-500/40 hover:bg-slate-900/70 glitch-card">
+              <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-violet-400">
+                JavaScript Fundamentals · 4 min read
+              </p>
+              <h3 className="mt-3 text-lg font-semibold text-slate-200">
+                Understanding “not defined” and “undefined” in JavaScript
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                A clear walkthrough of reference errors, scope, declared
+                values, and the debugging difference between these two terms.
+              </p>
+              <a
+                href="https://medium.com/techtrends-digest/understanding-the-difference-between-not-defined-and-undefined-as-a-javascript-developer-cd16fe0e487?sharedUserId=mr.kyere.s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto pt-5 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-violet-300 transition hover:text-violet-100"
+              >
+                Read article →
+              </a>
+            </article>
+
+            <article className="flex min-h-60 flex-col rounded-xl border border-slate-800/80 bg-slate-900/40 p-5 transition hover:border-emerald-500/40 hover:bg-slate-900/70 glitch-card">
+              <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-emerald-400">
+                AI Systems · 8 min read
+              </p>
+              <h3 className="mt-3 text-lg font-semibold text-slate-200">
+                The Shift from Deterministic Automation to Probabilistic Automation
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                Why reliable workflows need different design choices when the
+                task moves from repeatable execution to judgment and ambiguity.
+              </p>
+              <a
+                href="https://pub.towardsai.net/the-shift-from-deterministic-automation-to-probabilistic-automation-7d99b115116e?sharedUserId=mr.kyere.s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto pt-5 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-emerald-300 transition hover:text-emerald-100"
+              >
+                Read article →
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="relative overflow-hidden border-t border-zinc-800/40 bg-slate-950 py-24">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.12),transparent_40%)]" />
+        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">
+            Connection Ready
+          </p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Let&apos;s build reliable systems.
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-slate-400">
+            I&apos;m seeking software engineering and systems integration roles
+            where I can build dependable automation, APIs, and data workflows.
+          </p>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href="mailto:samuel@example.com"
+              className="inline-flex items-center justify-center rounded-lg border border-emerald-600/60 bg-emerald-950/40 px-5 py-3 font-mono text-sm font-semibold text-emerald-200 transition hover:border-emerald-500 hover:bg-emerald-900/60 hover:shadow-lg hover:shadow-emerald-500/20"
+            >
+              Email Samuel
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg border border-slate-700/70 bg-slate-900/70 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-800"
+            >
+              View LinkedIn
+            </a>
+          </div>
+          <p className="mt-6 font-mono text-xs text-slate-500">
+            status: open to engineering roles
+          </p>
+          <p className="mt-2 font-mono text-xs text-slate-600">
+            location: [ CITY, COUNTRY ] · preference: [ REMOTE / HYBRID / ONSITE ]
+          </p>
+        </div>
+      </section>
+
+      <footer className="border-t border-violet-500/20 bg-gradient-to-r from-violet-950/40 via-slate-900 to-cyan-950/30 px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 font-mono text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+          <p>samuel@systems:~$ portfolio --status active</p>
+          <p className="text-slate-500">© {new Date().getFullYear()} Samuel Kyere</p>
+        </div>
+      </footer>
     </div>
   );
 }
