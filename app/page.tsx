@@ -63,7 +63,7 @@ export default function Home() {
           <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/admirerbrown"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-9 w-9 rounded-lg border border-slate-700/50 text-slate-400 transition hover:border-violet-500/60 hover:text-violet-400 hover:bg-violet-950/30"
@@ -78,7 +78,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/samuel-ntow-kyere/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-9 w-9 rounded-lg border border-slate-700/50 text-slate-400 transition hover:border-violet-500/60 hover:text-violet-400 hover:bg-violet-950/30"
@@ -140,7 +140,8 @@ export default function Home() {
               </div>
               <div className="space-y-2 text-left">
                 <p className="font-mono text-xs text-slate-500 tracking-wide">
-                  user@sammy:~$ <span className="text-violet-400">// profile</span>
+                  user@sammy:~${" "}
+                  <span className="text-violet-400">// profile</span>
                 </p>
                 <p className="font-mono text-base font-semibold text-slate-100">
                   Samuel Kyere
@@ -171,7 +172,10 @@ export default function Home() {
               <div className="space-y-4">
                 <h1 className="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-5xl">
                   Software &{" "}
-                  <span className="glitch-text bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent" data-text="Integration Engineer">
+                  <span
+                    className="glitch-text bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent"
+                    data-text="Integration Engineer"
+                  >
                     Integration Engineer
                   </span>
                 </h1>
@@ -501,7 +505,10 @@ export default function Home() {
       </section>
 
       {/* Engineering Profile Section */}
-      <section id="capabilities" className="relative border-t border-zinc-800/40 bg-slate-950 py-24">
+      <section
+        id="capabilities"
+        className="relative border-t border-zinc-800/40 bg-slate-950 py-24"
+      >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(129,140,248,0.12),transparent_28%),radial-gradient(circle_at_10%_80%,rgba(16,185,129,0.08),transparent_24%)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
@@ -514,9 +521,9 @@ export default function Home() {
               </h2>
               <p className="max-w-xl leading-relaxed text-slate-400">
                 I turn disconnected tools and manual operations into reliable
-                workflows. The focus is not only on shipping an integration,
-                but making it observable, maintainable, and useful to the
-                people who run it.
+                workflows. The focus is not only on shipping an integration, but
+                making it observable, maintainable, and useful to the people who
+                run it.
               </p>
               <div className="border-l-2 border-emerald-500/50 pl-4 font-mono text-xs leading-6 text-slate-400">
                 <p className="text-emerald-300">$ engineering_principles</p>
@@ -533,8 +540,8 @@ export default function Home() {
                   Integration-ready services
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                  Backend logic, webhooks, payload validation, and API
-                  contracts that keep systems communicating predictably.
+                  Backend logic, webhooks, payload validation, and API contracts
+                  that keep systems communicating predictably.
                 </p>
               </article>
 
@@ -559,8 +566,8 @@ export default function Home() {
                   Grounded AI workflows
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                  Retrieval, automation, and human handoff patterns designed
-                  to make AI useful inside real operating environments.
+                  Retrieval, automation, and human handoff patterns designed to
+                  make AI useful inside real operating environments.
                 </p>
               </article>
 
@@ -582,7 +589,10 @@ export default function Home() {
       </section>
 
       {/* Experience Draft Section */}
-      <section id="experience" className="relative border-t border-zinc-800/40 bg-slate-950 py-24">
+      <section
+        id="experience"
+        className="relative border-t border-zinc-800/40 bg-slate-950 py-24"
+      >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(16,185,129,0.08),transparent_24%)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -595,34 +605,162 @@ export default function Home() {
               </h2>
             </div>
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-amber-300">
-              // Draft — details pending
+              // production experiences
             </p>
           </div>
 
-          <div className="space-y-4 border-l border-slate-800 pl-5 sm:pl-8">
-            <article className="relative rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 glitch-card">
-              <span className="absolute -left-[29px] top-7 h-3 w-3 rounded-full border-2 border-emerald-400 bg-slate-950 sm:-left-[41px]" />
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <p className="font-mono text-xs text-emerald-400">[ ROLE TITLE ]</p>
-                  <h3 className="mt-2 text-lg font-semibold text-slate-100">
-                    [ Company or client name ]
-                  </h3>
-                </div>
-                <span className="font-mono text-xs text-slate-500">[ DATE RANGE ]</span>
+          <div className="space-y-5 border-l border-slate-800 pl-5 sm:pl-8">
+            <article className="relative border border-slate-800/80 bg-slate-900/50 p-5 shadow-[0_18px_60px_-38px_rgba(15,23,42,0.9)] glitch-card">
+              <span className="absolute -left-[29px] top-6 h-3 w-3 rounded-full border-2 border-emerald-400 bg-slate-950 sm:-left-[41px]" />
+              <div className="font-mono text-xs leading-6 text-slate-400">
+                <p className="text-emerald-400">
+                  commit [ EXPERIENCE_COMMIT_ID ]
+                </p>
+                <p>Author: Samuel Kyere &lt;visual@alpha.com&gt;</p>
+                <p>Date: Jan 2023 - Dec 2025</p>
               </div>
-              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
-                [ Add the scope of the role, systems you owned, and one clear
-                outcome or responsibility. ]
+              <h3 className="mt-4 font-mono text-base font-semibold text-slate-100">
+                feat(experience): Software and automation Engineer @ Visual
+                Alpha
+              </h3>
+              <p>
+                Owned the engineering and automation layer across data pipelines
+                and AI-assisted tooling, taking systems from ingestion and
+                processing through validation and quality control.
+              </p>
+              <ul className="mt-4 space-y-1.5 text-sm leading-relaxed text-slate-400">
+                <li>
+                  • Architected and maintained Python-based data pipelines and
+                  AI agent workflows as the sole engineer on the codebase.
+                </li>
+                <li>
+                  • Automated 40–85% of previously manual operational workflows,
+                  reducing repetitive work while maintaining production
+                  reliability.
+                </li>
+                <li>
+                  •Built validation and quality-control mechanisms that improved
+                  consistency across data processing workflows.
+                </li>
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
+                  [ Python ]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
+                  [ Node.js]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
+                  [ Git ]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
+                  [ MySQL ]
+                </span>
+              </div>
+              <div className="mt-5 border-t border-slate-800 pt-4 font-mono text-xs leading-6 text-slate-500">
+                <p className="mt-2 text-slate-400">
+                  3 files changed, [###] insertions(+), [##] deletions(-)
+                </p>
+              </div>
+            </article>
+
+            <article className="relative border border-dashed border-slate-700/80 bg-slate-900/30 p-5">
+              <span className="absolute -left-[29px] top-6 h-3 w-3 rounded-full border-2 border-slate-600 bg-slate-950 sm:-left-[41px]" />
+              <div className="font-mono text-xs leading-6 text-slate-500">
+                <p>commit [ EXPERIENCE_COMMIT_ID ]</p>
+                <p>Author: Samuel Kyere &lt;samuelkyere@microverse.com&gt;</p>
+                <p>Date: [ March 2022- Dec 2022 ]</p>
+              </div>
+              <p className="mt-4 font-mono text-sm text-slate-400">
+                feat(experience): [ Code Reviewer ]
+              </p>
+              <p>
+                Evaluated production-style applications and capstone projects
+                against technical specifications, code-quality standards, and
+                architectural requirements.
+              </p>
+              <ul className="mt-4 space-y-1.5 text-sm leading-relaxed text-slate-400">
+                <li>
+                  • Conducted structured code reviews across React, Redux, Ruby
+                  on Rails, and PostgreSQL projects, identifying implementation,
+                  architectural, and specification issues.
+                </li>
+                <li>
+                  • Provided actionable technical feedback that guided
+                  developers toward maintainable, specification-compliant
+                  solutions.
+                </li>
+                <li>
+                  •Evaluated and approved final capstone submissions against
+                  defined engineering and quality standards.
+                </li>
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ React]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ Redux]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ Ruby on Rails]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ PostgreSQL]
+                </span>
+              </div>
+              <p className="mt-4 font-mono text-xs text-slate-600">
+                0 files changed, +0 insertions(+), -0 deletions(-)
               </p>
             </article>
 
-            <article className="relative rounded-xl border border-dashed border-slate-700/80 bg-slate-900/30 p-5">
-              <span className="absolute -left-[29px] top-7 h-3 w-3 rounded-full border-2 border-slate-600 bg-slate-950 sm:-left-[41px]" />
-              <p className="font-mono text-xs text-slate-500">[ ADD EXPERIENCE ENTRY ]</p>
-              <p className="mt-2 text-sm text-slate-500">
-                Duplicate this entry for another role, engagement, or notable
-                engineering contribution.
+            <article className="relative border border-dashed border-slate-700/80 bg-slate-900/30 p-5">
+              <span className="absolute -left-[29px] top-6 h-3 w-3 rounded-full border-2 border-slate-600 bg-slate-950 sm:-left-[41px]" />
+              <div className="font-mono text-xs leading-6 text-slate-500">
+                <p>commit [ EXPERIENCE_COMMIT_ID ]</p>
+                <p>Author: Samuel Kyere &lt;samuel@eziticket.com&gt;</p>
+                <p>Date: [ Apr 2021 - Dec 2021 ]</p>
+              </div>
+              <p className="mt-4 font-mono text-sm text-slate-400">
+                feat(experience): [ Backend Engineer ]
+              </p>
+              <p>
+                Designed and built the backend infrastructure for a mobile
+                ticketing MVP, translating insights from user interviews at bus
+                terminals into a functional booking and ticketing system.
+              </p>
+              <ul className="mt-4 space-y-1.5 text-sm leading-relaxed text-slate-400">
+                <li>
+                  • Built the Node.js backend and REST APIs supporting the
+                  Flutter mobile application.
+                </li>
+                <li>
+                  • Designed data models and backend services using Node.js and
+                  MongoDB to support ticketing and booking workflows.
+                </li>
+                <li>
+                  •Took the product from concept to working MVP within six
+                  months, validating the product against real-world user demand
+                  before discontinuing it due to insufficient commercial
+                  traction.
+                </li>
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ Flutter ]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ Node.js ]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ Express.js ]
+                </span>
+                <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
+                  [ MongoDB ]
+                </span>
+              </div>
+              <p className="mt-4 font-mono text-xs text-slate-600">
+                0 files changed, +0 insertions(+), -0 deletions(-)
               </p>
             </article>
           </div>
@@ -630,7 +768,10 @@ export default function Home() {
       </section>
 
       {/* Writing Draft Section */}
-      <section id="writing" className="relative border-t border-zinc-800/40 bg-slate-950 py-24">
+      <section
+        id="writing"
+        className="relative border-t border-zinc-800/40 bg-slate-950 py-24"
+      >
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -642,8 +783,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-slate-400 sm:text-right">
-              Short notes on reliable automation, integrations, and practical
-              AI systems.
+              Short notes on reliable automation, integrations, and practical AI
+              systems.
             </p>
           </div>
 
@@ -653,7 +794,8 @@ export default function Home() {
                 Integration Patterns · 3 min read
               </p>
               <h3 className="mt-3 text-lg font-semibold text-slate-200">
-                Webhook vs. API: Understanding the difference and when to use each one
+                Webhook vs. API: Understanding the difference and when to use
+                each one
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
                 A practical guide to choosing pull-based APIs or event-driven
@@ -677,8 +819,8 @@ export default function Home() {
                 Understanding “not defined” and “undefined” in JavaScript
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                A clear walkthrough of reference errors, scope, declared
-                values, and the debugging difference between these two terms.
+                A clear walkthrough of reference errors, scope, declared values,
+                and the debugging difference between these two terms.
               </p>
               <a
                 href="https://medium.com/techtrends-digest/understanding-the-difference-between-not-defined-and-undefined-as-a-javascript-developer-cd16fe0e487?sharedUserId=mr.kyere.s"
@@ -695,7 +837,8 @@ export default function Home() {
                 AI Systems · 8 min read
               </p>
               <h3 className="mt-3 text-lg font-semibold text-slate-200">
-                The Shift from Deterministic Automation to Probabilistic Automation
+                The Shift from Deterministic Automation to Probabilistic
+                Automation
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
                 Why reliable workflows need different design choices when the
@@ -715,7 +858,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative overflow-hidden border-t border-zinc-800/40 bg-slate-950 py-24">
+      <section
+        id="contact"
+        className="relative overflow-hidden border-t border-zinc-800/40 bg-slate-950 py-24"
+      >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.12),transparent_40%)]" />
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">
@@ -730,13 +876,13 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:samuel@example.com"
+              href="mailto:mr.kyere.s@gmail.com"
               className="inline-flex items-center justify-center rounded-lg border border-emerald-600/60 bg-emerald-950/40 px-5 py-3 font-mono text-sm font-semibold text-emerald-200 transition hover:border-emerald-500 hover:bg-emerald-900/60 hover:shadow-lg hover:shadow-emerald-500/20"
             >
               Email Samuel
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/samuel-ntow-kyere/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border border-slate-700/70 bg-slate-900/70 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:bg-slate-800"
@@ -745,10 +891,11 @@ export default function Home() {
             </a>
           </div>
           <p className="mt-6 font-mono text-xs text-slate-500">
-            status: open to engineering roles
+            status: Available for collaborations
           </p>
           <p className="mt-2 font-mono text-xs text-slate-600">
-            location: [ CITY, COUNTRY ] · preference: [ REMOTE / HYBRID / ONSITE ]
+            location: [ ACCRA, GHANA ] · preference: [ REMOTE / HYBRID / ONSITE
+            ]
           </p>
         </div>
       </section>
@@ -756,7 +903,9 @@ export default function Home() {
       <footer className="border-t border-violet-500/20 bg-gradient-to-r from-violet-950/40 via-slate-900 to-cyan-950/30 px-4 py-6 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 font-mono text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>samuel@systems:~$ portfolio --status active</p>
-          <p className="text-slate-500">© {new Date().getFullYear()} Samuel Kyere</p>
+          <p className="text-slate-500">
+            © {new Date().getFullYear()} Samuel Kyere
+          </p>
         </div>
       </footer>
     </div>
