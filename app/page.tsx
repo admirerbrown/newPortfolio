@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 const aiChatbotPreview =
-  'https://raw.githubusercontent.com/admirerbrown/AI-chatbot/main/assets/Screenshot_2025-11-19_23-13-11.png';
+  "https://raw.githubusercontent.com/admirerbrown/AI-chatbot/main/assets/Screenshot_2025-11-19_23-13-11.png";
 
 const dataSeedingPreview =
-  'https://raw.githubusercontent.com/admirerbrown/automated_data_seeding/main/assets/architecture.png';
+  "https://raw.githubusercontent.com/admirerbrown/automated_data_seeding/main/assets/architecture.png";
 
 const automationPreview = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
   <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
@@ -269,7 +269,7 @@ export default function Home() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="terminal-projects relative overflow-hidden border-t border-zinc-800/40 pb-24 pt-32"
+        className="terminal-projects relative overflow-hidden border-t border-zinc-800/40 pb-28 pt-32"
       >
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/75 to-slate-950" />
@@ -545,7 +545,11 @@ export default function Home() {
                       src: "/javascript.svg",
                       color: "#F7DF1E",
                     },
-                    {name: "Node.js", src: "/nodedotjs.svg",color: "#5FA04E"},
+                    {
+                      name: "Node.js",
+                      src: "/nodedotjs.svg",
+                      color: "#5FA04E",
+                    },
                     { name: "React", src: "/react.svg", color: "#61DAFB" },
                     { name: "n8n", src: "/n8n.svg", color: "#EA4B71" },
                     { name: "MongoDB", src: "/mongodb.svg", color: "#47A248" },
@@ -556,10 +560,21 @@ export default function Home() {
                       className="group flex flex-col items-center gap-2"
                     >
                       <div className="flex h-10 w-10 items-center justify-center">
-                        <img
-                          src={tool.src}
-                          alt={tool.name}
-                          className="h-full w-full object-contain"
+                        <span
+                          role="img"
+                          aria-label={tool.name}
+                          className="block h-8 w-8 bg-current bg-contain bg-center bg-no-repeat"
+                          style={{
+                            color: tool.color,
+                            WebkitMaskImage: `url(${tool.src})`,
+                            maskImage: `url(${tool.src})`,
+                            WebkitMaskRepeat: "no-repeat",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskPosition: "center",
+                            maskPosition: "center",
+                            WebkitMaskSize: "contain",
+                            maskSize: "contain",
+                          }}
                         />
                       </div>
 
