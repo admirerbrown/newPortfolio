@@ -197,14 +197,14 @@ export default function Home() {
                   href="#projects"
                   className="inline-flex items-center justify-center rounded-lg border border-violet-600/60 bg-violet-950/40 px-5 py-2.5 text-sm font-semibold text-violet-200 transition hover:border-violet-500 hover:bg-violet-900/60 hover:shadow-lg hover:shadow-violet-500/20"
                 >
-                  Examine Architecture
+                  See My Works
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-lg border border-emerald-600/60 bg-emerald-950/40 px-5 py-2.5 font-mono text-sm font-semibold text-emerald-200 transition hover:border-emerald-500 hover:bg-emerald-900/60 hover:shadow-lg hover:shadow-emerald-500/20"
                 >
                   Download Technical Resume (PDF)
-                </a>
+                </a> */}
               </div>
             </div>
 
