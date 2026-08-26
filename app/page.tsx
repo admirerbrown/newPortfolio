@@ -93,22 +93,24 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://medium.com/@mr.kyere.s"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-9 w-9 rounded-lg border border-slate-700/50 text-slate-400 transition hover:border-emerald-500/60 hover:text-emerald-400 hover:bg-emerald-950/30"
-                title="Twitter"
+                title="Medium"
               >
                 <svg
                   className="h-4 w-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M23.953 4.57a10 10 0 002.856-3.915 10 10 0 01-2.891.775 4.958 4.958 0 002.165-2.724c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                  <circle cx="6.5" cy="12" r="5.5" />
+                  <ellipse cx="15.5" cy="12" rx="4" ry="5.5" />
+                  <ellipse cx="21.5" cy="12" rx="1.5" ry="5.5" />
                 </svg>
               </a>
               <a
-                href="mailto:samuel@example.com"
+                href="mailto:mr.kyere.s@gmail.com"
                 className="inline-flex items-center justify-center h-9 w-9 rounded-lg border border-slate-700/50 text-slate-400 transition hover:border-purple-500/60 hover:text-purple-400 hover:bg-purple-950/30"
                 title="Email"
               >
@@ -269,7 +271,7 @@ export default function Home() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="terminal-projects relative overflow-hidden border-t border-zinc-800/40 pb-28 pt-32"
+        className="terminal-projects relative overflow-hidden border-t border-zinc-800/40 pb-24 pt-32"
       >
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/75 to-slate-950" />
@@ -676,13 +678,11 @@ export default function Home() {
             <article className="relative border border-slate-800/80 bg-slate-900/50 p-5 shadow-[0_18px_60px_-38px_rgba(15,23,42,0.9)] glitch-card">
               <span className="absolute -left-[29px] top-6 h-3 w-3 rounded-full border-2 border-emerald-400 bg-slate-950 sm:-left-[41px]" />
               <div className="font-mono text-xs leading-6 text-slate-400">
-                <p className="text-emerald-400">
-                  commit [ EXPERIENCE_COMMIT_ID ]
-                </p>
+                <p className="text-emerald-400">commit 7f3a91c</p>
                 <p>Author: Samuel Kyere &lt;visual@alpha.com&gt;</p>
-                <p>Date: Jan 2023 - Dec 2025</p>
+                <p>Date: Jan 2023 - Jan 2026</p>
               </div>
-              <h3 className="mt-4 font-mono text-base font-semibold text-slate-100">
+              <h3 className="mt-4 font-mono text-base font-semibold text-violet-400">
                 feat(experience): Software and automation Engineer @ Visual
                 Alpha
               </h3>
@@ -702,27 +702,27 @@ export default function Home() {
                   reliability.
                 </li>
                 <li>
-                  •Built validation and quality-control mechanisms that improved
-                  consistency across data processing workflows.
+                  • Built validation and quality-control mechanisms that
+                  improved consistency across data processing workflows.
                 </li>
               </ul>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
-                  [ Python ]
+                  Python
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
-                  [ Node.js]
+                  Node.js
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
-                  [ Git ]
+                  Git
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/60 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200">
-                  [ MySQL ]
+                  MySQL
                 </span>
               </div>
               <div className="mt-5 border-t border-slate-800 pt-4 font-mono text-xs leading-6 text-slate-500">
                 <p className="mt-2 text-slate-400">
-                  3 files changed, [###] insertions(+), [##] deletions(-)
+                  3 files changed, 214 insertions(+), 58 deletions(-)
                 </p>
               </div>
             </article>
@@ -730,12 +730,12 @@ export default function Home() {
             <article className="relative border border-dashed border-slate-700/80 bg-slate-900/30 p-5">
               <span className="absolute -left-[29px] top-6 h-3 w-3 rounded-full border-2 border-slate-600 bg-slate-950 sm:-left-[41px]" />
               <div className="font-mono text-xs leading-6 text-slate-500">
-                <p>commit [ EXPERIENCE_COMMIT_ID ]</p>
+                <p>commit 4d82c6e</p>
                 <p>Author: Samuel Kyere &lt;samuelkyere@microverse.com&gt;</p>
-                <p>Date: [ March 2022- Dec 2022 ]</p>
+                <p>Date: March 2022 - Dec 2022</p>
               </div>
-              <p className="mt-4 font-mono text-sm text-slate-400">
-                feat(experience): [ Code Reviewer ]
+              <p className="mt-4 font-mono text-sm text-violet-400">
+                feat(experience): Code Reviewer @ Microverse
               </p>
               <p>
                 Evaluated production-style applications and capstone projects
@@ -754,38 +754,38 @@ export default function Home() {
                   solutions.
                 </li>
                 <li>
-                  •Evaluated and approved final capstone submissions against
+                  • Evaluated and approved final capstone submissions against
                   defined engineering and quality standards.
                 </li>
               </ul>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ React]
+                  React
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ Redux]
+                  Redux
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ Ruby on Rails]
+                  Ruby on Rails
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ PostgreSQL]
+                  PostgreSQL
                 </span>
               </div>
               <p className="mt-4 font-mono text-xs text-slate-600">
-                0 files changed, +0 insertions(+), -0 deletions(-)
+                6 files changed, 142 insertions(+), 37 deletions(-)
               </p>
             </article>
 
             <article className="relative border border-dashed border-slate-700/80 bg-slate-900/30 p-5">
               <span className="absolute -left-[29px] top-6 h-3 w-3 rounded-full border-2 border-slate-600 bg-slate-950 sm:-left-[41px]" />
               <div className="font-mono text-xs leading-6 text-slate-500">
-                <p>commit [ EXPERIENCE_COMMIT_ID ]</p>
+                <p>commit 2b88e4d</p>
                 <p>Author: Samuel Kyere &lt;samuel@eziticket.com&gt;</p>
-                <p>Date: [ Apr 2021 - Dec 2021 ]</p>
+                <p>Date: Apr 2021 - Dec 2021</p>
               </div>
-              <p className="mt-4 font-mono text-sm text-slate-400">
-                feat(experience): [ Backend Engineer ]
+              <p className="mt-4 font-mono text-sm text-violet-400">
+                feat(experience): Backend Engineer @ eziticket
               </p>
               <p>
                 Designed and built the backend infrastructure for a mobile
@@ -802,7 +802,7 @@ export default function Home() {
                   MongoDB to support ticketing and booking workflows.
                 </li>
                 <li>
-                  •Took the product from concept to working MVP within six
+                  • Took the product from concept to working MVP within six
                   months, validating the product against real-world user demand
                   before discontinuing it due to insufficient commercial
                   traction.
@@ -810,20 +810,20 @@ export default function Home() {
               </ul>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ Flutter ]
+                  Flutter
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ Node.js ]
+                  Node.js
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ Express.js ]
+                  Express.js
                 </span>
                 <span className="rounded-full border border-dashed border-amber-400/50 bg-amber-400/5 px-2.5 py-1 font-mono text-[11px] text-amber-200/80">
-                  [ MongoDB ]
+                  MongoDB
                 </span>
               </div>
               <p className="mt-4 font-mono text-xs text-slate-600">
-                0 files changed, +0 insertions(+), -0 deletions(-)
+                5 files changed, 168 insertions(+), 22 deletions(-)
               </p>
             </article>
           </div>
@@ -957,8 +957,8 @@ export default function Home() {
             status: Available for collaborations
           </p>
           <p className="mt-2 font-mono text-xs text-slate-600">
-            location: [ ACCRA, GHANA ] · preference: [ REMOTE / HYBRID / ONSITE
-            ]
+            location: Accra, Ghana · preference: Open to remote, hybrid, or
+            onsite
           </p>
         </div>
       </section>
