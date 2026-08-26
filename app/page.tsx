@@ -529,6 +529,54 @@ export default function Home() {
                 <p className="text-emerald-300">$ engineering_principles</p>
                 <p>reliable inputs → clear state → traceable outputs</p>
               </div>
+
+              {/* Core Technology Stack */}
+              <div className="pt-5">
+                <p className="mb-4 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-500">
+                  Core Stack
+                </p>
+
+                <div className="grid grid-cols-4 gap-x-4 gap-y-5">
+                  {[
+                    { name: "Claude", src: "/claude.svg", color: "#D97757" },
+                    { name: "Python", src: "/python.svg", color: "#3776AB" },
+                    {
+                      name: "JavaScript",
+                      src: "/javascript.svg",
+                      color: "#F7DF1E",
+                    },
+                    {name: "Node.js", src: "/nodedotjs.svg",color: "#5FA04E"},
+                    { name: "React", src: "/react.svg", color: "#61DAFB" },
+                    { name: "n8n", src: "/n8n.svg", color: "#EA4B71" },
+                    { name: "MongoDB", src: "/mongodb.svg", color: "#47A248" },
+                    { name: "MySQL", src: "/mysql.svg", color: "#4479A1" },
+                  ].map((tool) => (
+                    <div
+                      key={tool.name}
+                      className="group flex flex-col items-center gap-2"
+                    >
+                      <div className="flex h-10 w-10 items-center justify-center">
+                        <img
+                          src={tool.src}
+                          alt={tool.name}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
+
+                      <span
+                        className="font-mono text-[9px] text-slate-500 transition-colors duration-200 group-hover:text-[var(--tool-color)]"
+                        style={
+                          {
+                            "--tool-color": tool.color,
+                          } as React.CSSProperties
+                        }
+                      >
+                        {tool.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
