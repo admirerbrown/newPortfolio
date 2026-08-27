@@ -919,7 +919,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section  details for reaching out*/}
       <section
         id="contact"
         className="relative overflow-hidden border-t border-zinc-800/40 bg-slate-950 py-24"
