@@ -1,6 +1,8 @@
 "use client";
 
-const aiChatbotPreview = "/ai_bot.png/";
+const BASE_PATH = process.env.NODE_ENV === "production" ? "/newPortfolio" : "";
+
+const aiChatbotPreview = `${BASE_PATH}/ai_bot.png`;
 
 const dataSeedingPreview =
   "https://raw.githubusercontent.com/admirerbrown/automated_data_seeding/main/assets/architecture.png";
@@ -132,7 +134,7 @@ export default function Home() {
               <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border-2 border-violet-500/70 bg-slate-950/80 p-1 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.15)] sm:h-24 sm:w-24 animate-heartbeat">
                 <div className="relative h-full w-full overflow-hidden rounded-full bg-slate-900/70 shadow-[0_16px_40px_-24px_rgba(99,102,241,0.4)]">
                   <img
-                    src="/sammyNewProfile2.png"
+                    src={`${BASE_PATH}/sammyNewProfile2.png`}
                     alt="Profile picture of Samuel Kyere"
                     className="h-full w-full object-cover"
                   />
@@ -370,7 +372,7 @@ export default function Home() {
                 <div className="relative flex h-full flex-col gap-2.5">
                   <div className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70">
                     <img
-                      src={"/whatsapp.png"}
+                      src={`${BASE_PATH}/whatsapp.png`}
                       alt="Workflow diagram for the WhatsApp lead qualification automation"
                       className="h-28 w-full object-cover transition duration-500 group-hover:scale-105"
                     />
@@ -539,22 +541,46 @@ export default function Home() {
 
                 <div className="grid grid-cols-4 gap-x-4 gap-y-5">
                   {[
-                    { name: "Claude", src: "/claude.svg", color: "#D97757" },
-                    { name: "Python", src: "/python.svg", color: "#3776AB" },
+                    {
+                      name: "Claude",
+                      src: `${BASE_PATH}/claude.svg`,
+                      color: "#D97757",
+                    },
+                    {
+                      name: "Python",
+                      src: `${BASE_PATH}/python.svg`,
+                      color: "#3776AB",
+                    },
                     {
                       name: "JavaScript",
-                      src: "/javascript.svg",
+                      src: `${BASE_PATH}/javascript.svg`,
                       color: "#F7DF1E",
                     },
                     {
                       name: "Node.js",
-                      src: "/nodedotjs.svg",
+                      src: `${BASE_PATH}/nodedotjs.svg`,
                       color: "#5FA04E",
                     },
-                    { name: "React", src: "/react.svg", color: "#61DAFB" },
-                    { name: "n8n", src: "/n8n.svg", color: "#EA4B71" },
-                    { name: "MongoDB", src: "/mongodb.svg", color: "#47A248" },
-                    { name: "MySQL", src: "/mysql.svg", color: "#4479A1" },
+                    {
+                      name: "React",
+                      src: `${BASE_PATH}/react.svg`,
+                      color: "#61DAFB",
+                    },
+                    {
+                      name: "n8n",
+                      src: `${BASE_PATH}/n8n.svg`,
+                      color: "#EA4B71",
+                    },
+                    {
+                      name: "MongoDB",
+                      src: `${BASE_PATH}/mongodb.svg`,
+                      color: "#47A248",
+                    },
+                    {
+                      name: "MySQL",
+                      src: `${BASE_PATH}/mysql.svg`,
+                      color: "#4479A1",
+                    },
                   ].map((tool) => (
                     <div
                       key={tool.name}
