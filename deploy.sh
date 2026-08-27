@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env bash
 
 set -euo pipefail
@@ -232,4 +231,3 @@ echo ""
 echo "Live site:"
 echo "https://admirerbrown.github.io/newPortfolio/"
 echo ""
-```
