@@ -1,7 +1,6 @@
 "use client";
 
-const aiChatbotPreview =
-  "https://raw.githubusercontent.com/admirerbrown/AI-chatbot/main/assets/Screenshot_2025-11-19_23-13-11.png";
+const aiChatbotPreview = "/ai_bot.png/";
 
 const dataSeedingPreview =
   "https://raw.githubusercontent.com/admirerbrown/automated_data_seeding/main/assets/architecture.png";
@@ -371,7 +370,7 @@ export default function Home() {
                 <div className="relative flex h-full flex-col gap-2.5">
                   <div className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-950/70">
                     <img
-                      src={automationPreview}
+                      src={"/whatsapp.png"}
                       alt="Workflow diagram for the WhatsApp lead qualification automation"
                       className="h-28 w-full object-cover transition duration-500 group-hover:scale-105"
                     />
@@ -934,8 +933,9 @@ export default function Home() {
             Let&apos;s build reliable systems.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-slate-400">
-            I&apos;m seeking software engineering and systems integration roles
-            where I can build dependable automation, APIs, and data workflows.
+            Have a process that could be automated or a system that needs
+            building? Let's talk, I'm open to engineering roles and automation
+            collaborations.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a
